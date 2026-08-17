@@ -57,3 +57,14 @@
 .co-brand-lockup.compact .global-brand img{width:24px;height:49px}
 .co-brand-lockup.compact .docile-brand img{width:61px;height:42px}
 .co-brand-lockup.compact .brand-plus{font-size:14px}
+
+/* Docile-led workspace navigation */
+.sidebar{background:linear-gradient(180deg,var(--docile-orange) 0%,#ef5417 100%)}
+.client-chip{background:rgba(121,35,9,.2);border-color:rgba(255,255,255,.28)}
+.client-chip .docile-dot{background:#fff;color:var(--docile-red)}
+.nav-section{color:rgba(255,255,255,.66)}
+.sidebar nav a{color:rgba(255,255,255,.88)}
+.sidebar nav a:hover,.sidebar nav a.active{background:rgba(112,29,4,.24);color:#fff}
+.sidebar nav em{background:rgba(112,29,4,.3)}
+.sidebar-foot{border-top-color:rgba(255,255,255,.3)}
+.sidebar-foot>button,.sidebar-foot>a,.user-mini small{color:rgba(255,255,255,.76)}
