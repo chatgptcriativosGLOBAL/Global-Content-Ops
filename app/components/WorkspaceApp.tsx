@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { CoBrandLockup } from "./CoBrandLockup";
 import { initialWorkflow, statusLabel, type WorkflowState } from "../../lib/workflow";
 
 type Module = "inbox" | "calendar" | "content-room" | "compare" | "approval-package" | "client-review" | "approved-release" | "today-trend";
@@ -116,10 +117,7 @@ export function WorkspaceApp({ module }: { module: Module }) {
   return (
     <div className="workspace">
       <aside className={mobileNav ? "sidebar open" : "sidebar"}>
-        <div className="brand-lockup">
-          <span className="brand-mark">G</span>
-          <span><b>GLOBAL</b><small>CONTENT OPS</small></span>
-        </div>
+        <CoBrandLockup compact />
         <div className="client-chip"><span className="docile-dot">D</span><div><small>CLIENTE</small><b>Docile</b></div><span>⌄</span></div>
         <nav>
           {visibleRoutes.map((item) => (
@@ -140,7 +138,7 @@ export function WorkspaceApp({ module }: { module: Module }) {
       <main className="main-panel">
         <header className="topbar">
           <button className="menu-button" onClick={() => setMobileNav(!mobileNav)} aria-label="Abrir menu">☰</button>
-          <div><small>{role === "agency" ? "GLOBAL × DOCILE" : "DOCILE · ÁREA DO CLIENTE"}</small><h1>{pageTitles[module]}</h1></div>
+          <div><small>{role === "agency" ? "GLOBAL + DOCILE" : "DOCILE · ÁREA DO CLIENTE"}</small><h1>{pageTitles[module]}</h1></div>
           <div className="top-actions">
             <a className="button button-quiet desktop-only" href="/calendar">＋ Novo conteúdo</a>
             <button className="notification-button" onClick={() => setNotificationsOpen(!notificationsOpen)} aria-label="Notificações">♢<span /></button>

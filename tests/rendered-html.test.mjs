@@ -17,13 +17,13 @@ async function render(pathname) {
   );
 }
 
-test("renders the Docile login experience", async () => {
+test("renders the Global + Docile login experience", async () => {
   const response = await render("/login");
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /Docile Content Ops/);
+  assert.match(html, /GLOBAL \+ DOCILE/);
   assert.match(html, /Bem-vindo de volta/);
   assert.match(html, /Entrar como[\s\S]*Agência/);
   assert.match(html, /href="\/inbox"/);

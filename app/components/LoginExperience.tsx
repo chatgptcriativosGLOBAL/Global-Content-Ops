@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CoBrandLockup } from "./CoBrandLockup";
 
 export function LoginExperience() {
   const [role, setRole] = useState<"agency" | "client">("agency");
@@ -12,12 +13,9 @@ export function LoginExperience() {
   return (
     <main className="login-page">
       <section className="login-story">
-        <div className="brand-lockup brand-lockup-light">
-          <span className="brand-mark">G</span>
-          <span><b>GLOBAL</b><small>CONTENT OPS</small></span>
-        </div>
+        <CoBrandLockup />
         <div className="login-message">
-          <p className="eyebrow">GLOBAL × DOCILE</p>
+          <p className="eyebrow">GLOBAL + DOCILE</p>
           <h1>Da ideia aprovada ao arquivo certo para publicar.</h1>
           <p>Planejamento, revisão e handoff em um só fluxo — com cada decisão registrada.</p>
         </div>

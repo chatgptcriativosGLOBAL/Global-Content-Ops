@@ -18,9 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const image = `${protocol}://${host}/og.png`;
-  const description = "Operação de conteúdo, revisão e aprovação entre Global e Docile.";
+  const description = "GLOBAL + DOCILE: operação de conteúdo, revisão e aprovação em um só fluxo.";
   return {
-    title: { default: "Docile Content Ops", template: "%s · Docile Content Ops" },
+    title: { default: "GLOBAL + DOCILE · Content Ops", template: "%s · GLOBAL + DOCILE" },
     description,
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: { title: "Conteúdo certo. Aprovação certa.", description, images: [{ url: image, width: 1672, height: 941 }] },

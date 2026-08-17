@@ -28,3 +28,20 @@
 @media(max-width:1050px){.metrics{grid-template-columns:1fr 1fr}.inbox-grid,.content-room-grid,.package-grid,.release-grid,.review-layout,.today-grid{grid-template-columns:1fr}.details-stack{display:grid;grid-template-columns:repeat(2,1fr)}.details-stack>*:last-child{grid-column:1/-1}}
 @media(max-width:760px){.sidebar{transform:translateX(-100%);transition:.25s}.sidebar.open{transform:translateX(0);box-shadow:20px 0 50px rgba(0,0,0,.2)}.main-panel{margin-left:0;width:100%}.menu-button{display:block;border:0;background:transparent;font-size:18px}.topbar{padding:0 15px;justify-content:flex-start;gap:12px}.top-actions{margin-left:auto}.page-shell{padding:22px 15px 50px}.page-intro{align-items:flex-start;flex-direction:column}.metrics{grid-template-columns:1fr 1fr}.compare-grid{grid-template-columns:1fr}.calendar-toolbar{gap:8px;align-items:flex-start;flex-direction:column}.details-stack{grid-template-columns:1fr}.details-stack>*:last-child{grid-column:auto}.login-page{grid-template-columns:1fr}.login-story{min-height:43vh;padding:28px}.login-message h1{font-size:41px}.login-proof{display:none}.login-form-wrap{padding:38px 22px}.desktop-only{display:none}.form-grid{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}}
 @media(max-width:460px){.metrics{grid-template-columns:1fr}.priority-row{align-items:flex-start}.deadline{display:none}.role-picker{grid-template-columns:1fr}.phone-actions>div{grid-template-columns:1fr}.creative-art h3{font-size:23px}.login-message h1{font-size:35px}}
+
+/* GLOBAL + DOCILE co-branding */
+.co-brand-lockup{display:flex;align-items:center;gap:12px;color:#fff;position:relative;z-index:1}
+.global-brand,.docile-brand{display:flex;align-items:center;gap:9px}
+.global-symbol{width:39px;height:39px;border-radius:12px;background:#fff;color:var(--green);display:grid;place-items:center;font-weight:950}
+.global-wordmark b,.global-wordmark small{display:block}
+.global-wordmark b{font-size:13px;letter-spacing:.08em}
+.global-wordmark small{font-size:8px;letter-spacing:.18em;opacity:.62;margin-top:2px}
+.brand-plus{font-size:20px;font-weight:400;color:rgba(255,255,255,.52);margin:0 1px}
+.docile-brand{color:#fff}
+.docile-brand>span{width:30px;height:30px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-size:11px;font-weight:950}
+.docile-brand b{font-size:12px;letter-spacing:.08em}
+.co-brand-lockup.compact{gap:9px;padding:0 7px 20px}
+.co-brand-lockup.compact .global-symbol{width:32px;height:32px;border-radius:9px}
+.co-brand-lockup.compact .brand-plus{font-size:15px}
+.co-brand-lockup.compact .docile-brand>span{width:27px;height:27px}
+.co-brand-lockup.compact .global-wordmark b,.co-brand-lockup.compact .docile-brand b{font-size:10px}
