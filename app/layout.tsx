@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: { default: "GLOBAL + DOCILE · Content Ops", template: "%s · GLOBAL + DOCILE" },
     description,
-    icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+    icons: { icon: "/brand/docile-color.png", shortcut: "/brand/docile-color.png" },
     openGraph: { title: "Conteúdo certo. Aprovação certa.", description, images: [{ url: image, width: 1672, height: 941 }] },
     twitter: { card: "summary_large_image", title: "Conteúdo certo. Aprovação certa.", description, images: [image] },
   };

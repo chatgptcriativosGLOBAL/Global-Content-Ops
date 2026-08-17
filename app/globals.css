@@ -45,3 +45,15 @@
 .co-brand-lockup.compact .brand-plus{font-size:15px}
 .co-brand-lockup.compact .docile-brand>span{width:27px;height:27px}
 .co-brand-lockup.compact .global-wordmark b,.co-brand-lockup.compact .docile-brand b{font-size:10px}
+
+/* Official agency assets from the shared brand library */
+:root{--docile-red:#da291c;--docile-orange:#ff6900}
+.official-brand{display:grid;place-items:center;flex:none}
+.official-brand img{display:block;object-fit:contain}
+.global-brand img{width:35px;height:70px}
+.docile-brand img{width:88px;height:58px}
+.co-brand-lockup .brand-plus{color:rgba(255,255,255,.7);font-weight:500}
+.co-brand-lockup.compact{gap:8px}
+.co-brand-lockup.compact .global-brand img{width:24px;height:49px}
+.co-brand-lockup.compact .docile-brand img{width:61px;height:42px}
+.co-brand-lockup.compact .brand-plus{font-size:14px}
